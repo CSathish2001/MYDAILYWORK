@@ -15,14 +15,14 @@ public class StudentGradeCalculator
             System.out.print("Enter marks obtained in Subject "+i+" : ");
             int marks = sc.nextInt();
             total+= marks;
-            // Checking out minimum obtained to pass Subject... 
+            // Checking out minimum marks obtained to pass Subject... 
             if(marks < 36)
             {
                 total = 0;
                 break;
             }
         }
-        //Calculating Average Marks in Subjects... 
+        //Calculating Average Marks obtained in Subjects... 
         float average = (float)total/subjects_count;
 
         //Printing Garde to Average Marks...
